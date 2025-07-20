@@ -1,0 +1,103 @@
+* {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+  background: #0a0a0a;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.calculator {
+  padding: 15px;
+  background: #1c1c1c;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #000;
+}
+
+.display input {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 35px;
+  text-align: right;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+  background: #333;
+  color: white;
+  font-size: 22px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:active {
+  background: #000;
+}
+
+#eqBtn {
+  background: orangered;
+  color: white;
+}
+
+.opr {
+  color: yellow;
+}
+
+.history {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 15px;
+  width: 250px;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.history h3 {
+  text-align: center;
+  margin-top: 0;
+  border-bottom: 1px solid #aaa;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.history li {
+  padding: 5px 0;
+  border-bottom: 1px solid #555;
+}
+
+#clearHistory {
+  background: crimson;
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
